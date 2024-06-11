@@ -5,11 +5,13 @@ VisualStudioVersion = 17.10.34928.147
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Assignment-2-Calculator", "Assignment-2-Calculator\Assignment-2-Calculator.csproj", "{39065C16-75A4-4E58-ABB9-64162B24EBA7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assignment-4-Palindrome", "Assignment-4-Palindrome\Assignment-4-Palindrome.csproj", "{C0958A8D-4CCB-4144-B48B-3AFB7603DA92}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Assignment-4-Palindrome", "Assignment-4-Palindrome\Assignment-4-Palindrome.csproj", "{C0958A8D-4CCB-4144-B48B-3AFB7603DA92}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assignment-3-Temperature", "Assignment-3-Temperature\Assignment-3-Temperature.csproj", "{1B5CBD42-C78D-4129-A425-3B5E7E25B96C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Assignment-3-Temperature", "Assignment-3-Temperature\Assignment-3-Temperature.csproj", "{1B5CBD42-C78D-4129-A425-3B5E7E25B96C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assignment-1-Odd-Even", "Assignment-1-Odd-Even\Assignment-1-Odd-Even.csproj", "{9421EB90-E525-4414-B4ED-4889E85232AF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Assignment-1-Odd-Even", "Assignment-1-Odd-Even\Assignment-1-Odd-Even.csproj", "{9421EB90-E525-4414-B4ED-4889E85232AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assignment-5-Finally", "Assignment-5-Finally\Assignment-5-Finally.csproj", "{1F913D8F-5A7E-4B07-A898-1C69026B4B37}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{9421EB90-E525-4414-B4ED-4889E85232AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9421EB90-E525-4414-B4ED-4889E85232AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9421EB90-E525-4414-B4ED-4889E85232AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F913D8F-5A7E-4B07-A898-1C69026B4B37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F913D8F-5A7E-4B07-A898-1C69026B4B37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F913D8F-5A7E-4B07-A898-1C69026B4B37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F913D8F-5A7E-4B07-A898-1C69026B4B37}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
