@@ -44,7 +44,7 @@ namespace BooksAPI.Controllers
         [HttpDelete("deleteall")]
         public IActionResult DeleteBook()
         {
-            var existBook = _bookServices.DeleteBook();
+            _bookServices.DeleteBook();
             return Ok("!!!All book deleted successfully!!!");
           
         }
