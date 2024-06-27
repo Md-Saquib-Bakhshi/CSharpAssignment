@@ -17,7 +17,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductManagementSystem", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductManagementSystemAdvance", "ProductManagementSystemAdvance\ProductManagementSystemAdvance.csproj", "{E7211633-DD1C-4535-9324-9C638E9A4883}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MobileManagementSystem", "MobileManagementSystem\MobileManagementSystem.csproj", "{32150F6A-FE2F-4F26-AA6D-E470E42AD1DC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MobileManagementSystem", "MobileManagementSystem\MobileManagementSystem.csproj", "{32150F6A-FE2F-4F26-AA6D-E470E42AD1DC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookManagementSystem", "BookManagementSystem\BookManagementSystem.csproj", "{C994665F-A167-4331-8B6C-1B0C57C79524}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductManagementAPI", "ProductManagementAPI\ProductManagementAPI.csproj", "{D788F052-30FC-4069-BE38-78968B2966A0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BooksAPI", "BooksAPI\BooksAPI.csproj", "{2D2473B2-F87D-43CB-9409-D0DD53CC9222}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +63,18 @@ Global
 		{32150F6A-FE2F-4F26-AA6D-E470E42AD1DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{32150F6A-FE2F-4F26-AA6D-E470E42AD1DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{32150F6A-FE2F-4F26-AA6D-E470E42AD1DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C994665F-A167-4331-8B6C-1B0C57C79524}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C994665F-A167-4331-8B6C-1B0C57C79524}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C994665F-A167-4331-8B6C-1B0C57C79524}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C994665F-A167-4331-8B6C-1B0C57C79524}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D788F052-30FC-4069-BE38-78968B2966A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D788F052-30FC-4069-BE38-78968B2966A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D788F052-30FC-4069-BE38-78968B2966A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D788F052-30FC-4069-BE38-78968B2966A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D2473B2-F87D-43CB-9409-D0DD53CC9222}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D2473B2-F87D-43CB-9409-D0DD53CC9222}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D2473B2-F87D-43CB-9409-D0DD53CC9222}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D2473B2-F87D-43CB-9409-D0DD53CC9222}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

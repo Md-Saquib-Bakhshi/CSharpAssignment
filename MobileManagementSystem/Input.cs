@@ -42,11 +42,11 @@ namespace MobileManagementSystem
             }
             catch (FormatException e)
             {
-                Console.WriteLine($"\nFormatException: {e.Message}");
+                Console.WriteLine($"\n{e.Message}");
             }
             catch (Exception e)
             {
-                Console.WriteLine($"\nUnhadledException: {e.Message}");
+                Console.WriteLine($"\n{e.Message}");
             }
         }
     }

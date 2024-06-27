@@ -33,7 +33,7 @@ namespace MobileManagementSystem
             Console.WriteLine("\n-------------------------------------------------------------------------------------");
         }
 
-        public static void SearchLowBudgetMobile(Predicate<Mobile> predicate)
+        public static void SearchLowBudgetMobile(Predicate<Mobile> filteredProductDelegate)
         {
             Console.WriteLine("\n--------------------------------- Filtered Products ---------------------------------");
             Console.WriteLine("\n---------------------- Mobile having less price than max price ----------------------");
@@ -43,7 +43,7 @@ namespace MobileManagementSystem
             }
             foreach (Mobile mobile in DataStorage.mobiles)
             {
-                if (predicate(mobile))
+                if (filteredProductDelegate(mobile))
                 {
                     Console.WriteLine($"\nProductId: {mobile.ID}\nProductName: {mobile.Name}\nProductDetails: {mobile.Description}\nManufacturedBy: {mobile.ManufacturedBy}\nPrice: {mobile.Price}\n");
                 }
@@ -62,12 +62,21 @@ namespace MobileManagementSystem
             }
             Console.Write("Enter Manufacturer Name to filter: ");
             string manufacturerName = Console.ReadLine();
-            foreach (Mobile mobile in DataStorage.mobiles)
+            //foreach (Mobile mobile in DataStorage.mobiles)
+            //{
+            //    if (mobile.ManufacturedBy.Equals(manufacturerName))
+            //    {
+            //        Console.WriteLine($"\nProductId: {mobile.ID}\nProductName: {mobile.Name}\nProductDetails: {mobile.Description}\nManufacturedBy: {mobile.ManufacturedBy}\nPrice: {mobile.Price}\n");
+            //    }
+            //}
+
+            //var sameManufacturedList = from mobile in DataStorage.mobiles where mobile.ManufacturedBy == manufacturerName select mobile;
+
+            var filteredList = DataStorage.mobiles.Where(m => m.ManufacturedBy == manufacturerName).ToList();
+
+            foreach (Mobile mobile in filteredList)
             {
-                if (mobile.ManufacturedBy.Equals(manufacturerName))
-                {
-                    Console.WriteLine($"\nProductId: {mobile.ID}\nProductName: {mobile.Name}\nProductDetails: {mobile.Description}\nManufacturedBy: {mobile.ManufacturedBy}\nPrice: {mobile.Price}\n");
-                }
+                Console.WriteLine($"\nProductId: {mobile.ID}\nProductName: {mobile.Name}\nProductDetails: {mobile.Description}\nManufacturedBy: {mobile.ManufacturedBy}\nPrice: {mobile.Price}\n");
             }
             Console.WriteLine("\n-------------------------------------------------------------------------------------");
         }

@@ -20,6 +20,7 @@ namespace MobileManagementSystem
             startHandler += WelcomeMessage;
             startHandler();
         }
+
         public void Menu()
         {
             try
@@ -29,7 +30,7 @@ namespace MobileManagementSystem
                     Console.Write("\nEnter\n 1 for AddMobile\n 2 for ViewAllMobile\n 3 for SearchLowBudgetMobile (Price less than max price)\n 4 for SearchByManufacturer\n 5 for SearchIntermediateBudgetMobile (Price more than min price & less than max price)\n 6 for RemoveMobile (Remove all except min price & max price mobile)\n 7 for exit: ");
                     if (!int.TryParse(Console.ReadLine(), out int choice))
                     {
-                        throw new FormatException("\n!!!Input must be an integer value!!!");
+                        throw new FormatException("\n!!!Choose from the given options!!!");
                     }
                     switch (choice)
                     {
@@ -61,7 +62,7 @@ namespace MobileManagementSystem
                             Input.InputMenu();
                             break;
                         default:
-                            Console.WriteLine("!!!Invalid Input!!!");
+                            Console.WriteLine("!!!Invalid Choice!!!");
                             break;
                     }
                 }
