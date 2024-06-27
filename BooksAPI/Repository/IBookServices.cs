@@ -6,7 +6,7 @@ namespace BooksAPI.Repository
         Book AddBook(Book book);
         IEnumerable<Book> GetAllBooks();
         Book UpdateBook(Guid isbn, Book book);
-        bool DeleteBook(Guid isbn);
+        void DeleteBook();
         IEnumerable<Book> SearchBook(Predicate<Book> searchBookPredicate);
     }
 }

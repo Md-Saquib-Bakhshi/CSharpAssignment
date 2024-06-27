@@ -41,15 +41,12 @@ namespace BooksAPI.Controllers
             return NotFound($"!!!Book with isbn {isbn} not found!!!");
         }
 
-        [HttpDelete("{isbn}")]
-        public IActionResult DeleteBook(Guid isbn)
+        [HttpDelete("deleteall")]
+        public IActionResult DeleteBook()
         {
-            var existBook = _bookServices.DeleteBook(isbn);
-            if (existBook != null)
-            {
-                return Ok(existBook);
-            }
-            return NotFound($"!!!Book with isbn {isbn} not found!!!");
+            var existBook = _bookServices.DeleteBook();
+            return Ok("!!!All book deleted successfully!!!");
+          
         }
 
         [HttpGet("maxprice")]

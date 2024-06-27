@@ -52,19 +52,13 @@ namespace BooksAPI.Repository
             return null;
         }
 
-        public bool DeleteBook(Guid isbn)
+        public void DeleteBook()
         {
             if (_bookList.Count == 0)
             {
                 Console.WriteLine("!!!Book list are already empty!!!");
             }
-            var bookExist = _bookList.FirstOrDefault(x => x.ISBN.Equals(isbn));
-            if (bookExist != null)
-            {
-                _bookList.Remove(bookExist);
-                return true;
-            }
-            return false;
+            _bookList.Clear();
         }
 
         public IEnumerable<Book> SearchBook(Predicate<Book> searchBookPredicate)
